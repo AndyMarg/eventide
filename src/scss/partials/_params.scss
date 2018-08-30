@@ -1,14 +1,20 @@
 // default fonts
-$default-font-family: 'Open Sans', sans-serif;
-$default-font-size: 14px;
+$default-font-family: 'Ubuntu', sans-serif;
+$default-font-size: 16px;
+$default-font-weight: 400;
 
 // default sizes
 $default-min-width: 320px;
 
 // default colors
-$default-bg-color: #ececec;
-$default-color: #000;
-$default-btn-bg-color: #d51e08;
-$default-btn-color: #fff;
-$default-menu-color: #000;
-$default-menu-hover-color: #000799
+$default-bg-color: #fff;
+$default-color: #828282;
+
+// default link styles
+$link-font-family: 'Montserrat, sans-serif';
+$link-font-size: 17px;
+$link-font-weight: 700;
+$link-color: #2cc7c1;
+
+// default header styles
+$header-font-family: 'Montserrat, sans-serif';

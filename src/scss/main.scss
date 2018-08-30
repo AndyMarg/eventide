@@ -4,12 +4,35 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 body {
-    
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+    font-weight: $default-font-weight;
+    background-color: $default-bg-color;
+    color: $default-color;
+    min-width: $default-min-width;
+}
+
+a {
+    font-family: $link-font-family;
+    font-size: $link-font-size;
+    font-weight: $link-font-weight;
+    color: $link-color;
 }
 
 img {
-
+    max-width: 100%;
+    height: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {margin: 0;}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: $header-font-family;
+    text-transform: uppercase;   
+}
+
+h2 {
+    font-size: 30px;
+}
+
+section {position: relative;}
 
