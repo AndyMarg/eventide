@@ -1,0 +1,18 @@
+@import "partials/mixins";
+@import "partials/params";
+
+#speakers {
+    padding: 90px 0;
+    border-bottom: 2px solid #f0f0f0;
+
+    & .right-block {
+        & h2 {color: #828689;}
+        & p.large {
+            margin-bottom: 20px; 
+            color: #828689;
+            font-size: 22px;
+        }
+        & p {}
+    }
+    
+}

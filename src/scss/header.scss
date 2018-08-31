@@ -26,6 +26,7 @@ $content-color: #fff;
         max-width: 550px;
 
         & h1 {
+            margin-bottom: 20px;
             font-size: 31px;
             font-weight: 700;
             color: $content-color;
@@ -45,6 +46,6 @@ $content-color: #fff;
                 font-size: 13px;
             }
         }
-        
     }    
+    
 } 
