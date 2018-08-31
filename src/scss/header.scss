@@ -1,8 +1,50 @@
 @import "partials/mixins";
 @import "partials/params";
 
+$content-color: #fff;
+
 #header {
     background: url('../img/2.jpg') center no-repeat;
     background-size: cover;
     height: 100vh;
-}
+    min-height: 500px;
+
+    & .display-table {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+    & .display-row {display: table-row;}
+    & .display-cell {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+
+    }
+    & .display-center {
+        display: inline-block; 
+        max-width: 550px;
+
+        & h1 {
+            font-size: 31px;
+            font-weight: 700;
+            color: $content-color;
+        }
+        & p {
+            font-size: 20px;
+            color: $content-color;
+        }
+    }
+
+    @media only screen and (max-width: 580px) {
+        & .display-center {
+            & h1 {font-size: 20px;}
+            & p {font-size: 16px;}
+            & .btn {
+                padding: 7px 15px;
+                font-size: 13px;
+            }
+        }
+        
+    }    
+} 

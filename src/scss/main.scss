@@ -36,3 +36,30 @@ h2 {
 
 section {position: relative;}
 
+.btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-family: $button-font-family;
+    font-size: 17px;
+    color: $button-color;
+    border: none;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+.btn-primary {
+    background-color: #7ea4e8;
+    &:hover {
+        color:  $button-color;
+        background-color: #6787c2;
+    }
+}
+
+.btn-default {
+    background-color: #6a7079;
+    &:hover {
+        color:$button-color;
+        background-color: #474c52;
+    }
+}
+
