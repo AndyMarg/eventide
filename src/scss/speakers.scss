@@ -5,14 +5,56 @@
     padding: 90px 0;
     border-bottom: 2px solid #f0f0f0;
 
-    & .right-block {
-        & h2 {color: #828689;}
+    & .left-block {
+        & h2 {
+            margin-bottom: 20px;
+            color: #828689;
+        }
         & p.large {
             margin-bottom: 20px; 
             color: #828689;
-            font-size: 22px;
+            font-size: 20px;
         }
-        & p {}
+    }
+
+    & .right-block {
+        border: 3px solid #ececec;
+        border-radius: 2px;
+
+        & .tab-content {
+            padding: 25px 20px;
+
+            & ul {
+                padding-left: 10px;
+                & li {
+                    line-height: 30px;
+                    & i {
+                        margin-right: 10px;
+                        font-size: 14px;
+                        color: $link-color;
+                    }
+                }
+            }
+        }
+
+        & .nav-tabs {
+            & a {text-transform: uppercase;} 
+
+            & li {
+                background-color:  #ececec;
+                & a {
+                    font-family: $default-font-family;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: #abbaba;
+                    border: none;
+                    border-radius: 0;
+                }    
+                &.active a{
+                    color: #9097a1;
+                }
+            }
+        }
     }
     
 }
