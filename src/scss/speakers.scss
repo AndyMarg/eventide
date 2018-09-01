@@ -5,15 +5,16 @@
     padding: 90px 0;
     border-bottom: 2px solid #f0f0f0;
 
+    & p.large {
+        margin-bottom: 20px; 
+        color: #828689;
+        font-size: 20px;
+    }
+    
     & .left-block {
         & h2 {
             margin-bottom: 20px;
             color: #828689;
-        }
-        & p.large {
-            margin-bottom: 20px; 
-            color: #828689;
-            font-size: 20px;
         }
     }
 
