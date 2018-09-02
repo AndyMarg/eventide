@@ -2,7 +2,7 @@
 @import "partials/params";
 
 #speakers {
-    padding: 90px 0;
+    padding-top: 60px;
     border-bottom: 2px solid #f0f0f0;
 
     & p.large {
@@ -10,7 +10,7 @@
         color: #828689;
         font-size: 20px;
     }
-    
+
     & .left-block {
         & h2 {
             margin-bottom: 20px;
@@ -57,5 +57,67 @@
             }
         }
     }
-    
+
+    & .speakers-header {
+        margin-top: 100px;
+        margin-bottom: 60px;
+
+        & h2 {
+            color: #6a7079;
+        }
+    }
+
+    & .speakers-list {
+        & h3 {
+            margin: 10px 0;
+            font-family: $default-font-family;
+            font-weight: 500;
+            color: #777a7d;
+            font-size: 20px;
+        }
+    }
+
+    & .speakers-footer {
+        margin-bottom: 70px;
+    }
+
+    & .item div {
+        position: relative;
+        &:hover {
+            & h3 {color: #6bd8d3;}
+        }
+        & .front-image {
+            position: absolute;
+            height: 140px;
+            width: 140px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.2; 
+            }
+            
+        }
+        & .back-image {
+            display: inline-block;
+            height: 140px;
+            width: 140px;
+            border-radius: 50%;
+            background-color: #6bd8d3;
+            & i {
+                line-height: 140px;
+                font-size: 40px;
+                color: #fff;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        & .speakers-header, .speakers-footer {margin: 40px 0;}
+        & .left-block {margin-bottom: 40px;}
+    }    
+
+    @media only screen and (max-width: 768px) {
+        & .item {
+            margin-bottom: 50px;
+        }
+    }    
 }
