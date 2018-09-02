@@ -1,0 +1,13 @@
+@import "partials/mixins";
+@import "partials/params";
+
+#events {
+    padding: 60px 0;
+    & h2 {margin-bottom: 20px;}
+    & a {
+        text-transform: uppercase;
+        & i {
+            margin-right: 10px;
+        }
+    }
+}
